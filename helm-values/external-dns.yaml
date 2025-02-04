@@ -1,0 +1,13 @@
+provider: aws
+
+env:
+- name: AWS_DEFAULT_REGION
+  value: eu-west-2
+
+
+serviceAccount:
+  annotations:
+    eks.amazonaws.com/role-arn: "arn:aws:iam::009160072276:role/external-dns"
+
+domainFilters:
+- lab.qaisnavaei.com
